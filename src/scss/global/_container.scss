@@ -1,0 +1,33 @@
+@use "./mixins" as *;
+
+// max-width: rem(1110);
+// padding: 0 rem(25);
+// margin: rem(36) auto rem(46);
+// @include breakpoint-up(large){
+//   padding: 0;
+// }
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+
+  @include breakpoint-up(large){
+    padding: 0;
+  }
+}
+
+.content{
+  padding: rem(40) 0;
+}
+
+.wrapper {
+  width: calc(100vw - rem(100));
+  max-width: rem(1400);
+  margin: rem(50) auto;
+
+  background: #fff;
+  border-radius: rem(10);
+  @include breakpoint-up(large){
+    padding: 0;
+  }
+}

@@ -1,0 +1,82 @@
+@use "./mixins" as *;
+html,
+body {
+	min-height: 100%;
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-size: 100%;
+	font-family: var(--font_faimliy-inter);
+	background: var(--color-bg);
+	color: var(--color-text);
+}
+
+ul,
+ol,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+
+ul,li {
+  list-style: none;
+}
+
+.flex {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+
+.--just-space {
+	justify-content: space-between;
+}
+
+.--just-center {
+	justify-content: center;
+}
+
+.--just-end {
+	justify-content: flex-end;
+}
+
+.--align-str {
+	align-items: stretch;
+}
+
+.--align-center {
+	align-items: center;
+}
+
+.--align-end {
+	align-items: flex-end;
+}
+
+.--dir-col {
+	flex-direction: column;
+}
+
+.--mt-1 {
+	margin: 1rem;
+}
+.cards {
+	// @include breakpoint-up(midium) {
+	// 	display: flex;
+	// 	gap: rem(30);
+	// }
+}
